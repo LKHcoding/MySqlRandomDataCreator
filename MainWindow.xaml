@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Mysql Random Data Creator [LKHcoding]" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+
+
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox x:Name="ListBox" Grid.Row="3"/>
+        <Button Content="DB Insert" HorizontalAlignment="Left" Margin="27,0,0,0" Grid.Row="1" VerticalAlignment="Center" RenderTransformOrigin="-0.545,0.102" Height="30" Width="71" Click="Button_Click"/>
+        <TextBox x:Name="DBname" HorizontalAlignment="Left" Margin="239,0,0,0" Grid.Row="1" Text="membersql" TextWrapping="Wrap" VerticalAlignment="Center" Width="123" Height="28"/>
+        <Label Content="DBName" HorizontalAlignment="Left" Margin="167,0,0,0" Grid.Row="1" VerticalAlignment="Center" Height="30" Width="67"/>
+        <Label Content="Table" HorizontalAlignment="Left" Margin="428,0,0,0" Grid.Row="1" VerticalAlignment="Center" Height="30" Width="41"/>
+        <TextBox x:Name="TableName" HorizontalAlignment="Left" Margin="488,0,0,0" Grid.Row="1" Text="mem" TextWrapping="Wrap" VerticalAlignment="Center" Width="123" Height="28"/>
+        <Label Content="howmuch" HorizontalAlignment="Left" Margin="167,0,0,0" VerticalAlignment="Center" Height="32" Width="72"/>
+        <TextBox x:Name="howmuch" HorizontalAlignment="Left" Margin="239,0,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Center" Width="123" Height="30"/>
+        <Label Content="Column 명을 6개 입력해주세요" HorizontalAlignment="Left"  Grid.Row="2" VerticalAlignment="Center"/>
+        <TextBox x:Name="Column1" Grid.Row="2" HorizontalAlignment="Left" Margin="200,0,0,0" Text="memberid" TextWrapping="Wrap" Height="30" Width="80"/>
+        <CheckBox x:Name="Chk1" Grid.Row="2" HorizontalAlignment="Left" Margin="185,7,0,0" IsChecked="True" IsEnabled="False"/>
+        <CheckBox x:Name="Chk2" Grid.Row="2" HorizontalAlignment="Left" Margin="285,7,0,0" IsChecked="True"/>
+        <CheckBox x:Name="Chk3" Grid.Row="2" HorizontalAlignment="Left" Margin="385,7,0,0" IsChecked="True"/>
+        <CheckBox x:Name="Chk4" Grid.Row="2" HorizontalAlignment="Left" Margin="485,7,0,0" IsChecked="True"/>
+        <CheckBox x:Name="Chk5" Grid.Row="2" HorizontalAlignment="Left" Margin="585,7,0,0" IsChecked="True"/>
+        <CheckBox x:Name="Chk6" Grid.Row="2" HorizontalAlignment="Left" Margin="685,7,0,0"/>
+
+        <TextBox x:Name="Column2" Grid.Row="2" HorizontalAlignment="Left" Margin="300,0,0,0" Text="name" TextWrapping="Wrap" Height="30" Width="80"/>
+        <TextBox x:Name="Column3" Grid.Row="2" HorizontalAlignment="Left" Margin="400,0,0,0" Text="age" TextWrapping="Wrap" Height="30" Width="80"/>
+        <TextBox x:Name="Column4" Grid.Row="2" HorizontalAlignment="Left" Margin="500,0,0,0" Text="address" TextWrapping="Wrap" Height="30" Width="80"/>
+        <TextBox x:Name="Column5" Grid.Row="2" HorizontalAlignment="Left" Margin="600,0,0,0" Text="phoneNo" TextWrapping="Wrap" Height="30" Width="80"/>
+        <TextBox x:Name="Column6" Grid.Row="2" HorizontalAlignment="Left" Margin="700,0,0,0" Text="email" TextWrapping="Wrap" Height="30" Width="80"/>
+        <TextBox x:Name="DBID" HorizontalAlignment="Left" Margin="490,0,0,0" Text="root" TextWrapping="Wrap" VerticalAlignment="Center" Width="76" Height="24"/>
+        <TextBox  x:Name="DBPW" HorizontalAlignment="Left" Margin="593,0,0,0" Text="rootroot" TextWrapping="Wrap" VerticalAlignment="Center" Width="87" Height="24"/>
+        <Label Content="Mysql ID/PW" HorizontalAlignment="Left" Margin="393,0,0,0" VerticalAlignment="Center" Width="87"/>
+    </Grid>
+</Window>
