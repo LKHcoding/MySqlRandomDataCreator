@@ -1,6 +1,6 @@
 # Mysql 랜덤 데이터 입력 프로그램
 
-![image](https://user-images.githubusercontent.com/55027765/103334987-eae03e80-4ab6-11eb-9fb3-b2220f8604f9.png)
+![image](https://user-images.githubusercontent.com/55027765/103336600-0d288b00-4abc-11eb-8471-87954ac76447.png)
 
 ### Mysql localhost 사용시에만 가능
 
